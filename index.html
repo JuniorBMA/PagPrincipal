@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página con Barra de Navegación Fija y Slider de Imágenes</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Barra de Navegación -->
+    <nav id="navbar">
+      <div class="logo">
+        <img src="img-ops/img02.png" alt="Logo" />
+      </div>
+      <ul class="nav-links">
+        <li><a href="#carreras">Carreras</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#contactenos">Contáctenos</a></li>
+        <li><a href="#vision">Visión</a></li>
+      </ul>
+    </nav>
+
+    <!-- Slider de Imágenes -->
+    <div class="slider-container">
+      <div class="slider">
+        <img src="slide-principal/Cet.jpg" alt="Imagen 1" />
+        <img src="slide-principal/Welc.jpeg" alt="Imagen 2" />
+        <img src="slide-principal/Estilismo.png" alt="Imagen 3" />
+        <img src="slide-principal/Tejeduría a Telar.png" alt="Imagen 4" />
+        <img src="slide-principal/TejMaqy.png" alt="Imagen 5" />
+        <img src="slide-principal/Plataformas.png" alt="Imagen 6" />
+        <img src="slide-principal/Fabricac.png" alt="Imagen 7" />
+      </div>
+      <div class="slider-nav">
+        <span class="prev" onclick="moveSlide(-1)">&#10094;</span>
+        <span class="next" onclick="moveSlide(1)">&#10095;</span>
+      </div>
+      <div class="slider-dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+      </div>
+    </div>
+
+    <!-- Secciones de contenido -->
+    <section id="carreras">
+      <h2 class="carr">Carreras</h2>
+      <p>
+        ¿Estás listo para impulsar tu futuro profesional en solo 2 años? Te
+        invitamos a formar parte de nuestras carreras técnicas diseñadas para
+        brindarte habilidades prácticas y oportunidades en el mundo laboral.
+      </p>
+      <!-- Contenedor de las imágenes con cajas -->
+      <div class="carousel-container">
+        <button class="prev" onclick="moveImages(-1)">&#10094;</button>
+
+        <div class="image-container">
+          <div class="image-box">
+            <img src="slide-carreras/Fabr.jpg" alt="Imagen 1" />
+            <div class="image-overlay">
+              <a href="https:/rcodigo.github.io/bma2024/"
+                ><p class="pris">Fabricación de Prendas de vestir</p>
+                <p class="mof">
+                  Capacítate en diseño, corte, confección y producción de
+                  prendas de vestir. Conviértete en un profesional capaz de
+                  crear productos de calidad para la industria textil y de moda.
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="image-box">
+            <img src="slide-carreras/TejTelar.jpeg" alt="Imagen 2" />
+            <div class="image-overlay">
+              <a href="#"
+                ><p class="pris">Tejeduría a Telar</p>
+                <p class="mof">
+                  Desarrolla habilidades tradicionales y modernas en el manejo
+                  de telares. Conoce los procesos artesanales y su combinación
+                  con nuevas tecnologías, asegurando una formación integral en
+                  el arte textil.
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="image-box">
+            <img src="slide-carreras/Plataf.jpeg" alt="Imagen 3" />
+            <div class="image-overlay">
+              <a href="#"
+                ><p class="pris">
+                  Plataformas y Servicios de Tecnologias de la Información
+                </p>
+                <p class="mof">
+                  Domina las tecnologías de la información y aprende a gestionar
+                  plataformas digitales, servicios de red y soporte técnico.
+                  Prepárate para un mundo digital en constante crecimiento.
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="image-box">
+            <img src="slide-carreras/Estil.jpeg" alt="Imagen 4" />
+            <div class="image-overlay">
+              <a href="#"
+                ><p class="pris">Estilismo</p>
+                <p class="mof">
+                  Fórmate en cuidado personal, tendencias de belleza y servicios
+                  de peluquería y estética. Aprende a brindar soluciones
+                  creativas e innovadoras, preparándote para destacar en el
+                  mundo del estilismo y la moda.
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="image-box">
+            <img src="slide-carreras/4.jpeg" alt="Imagen 5" />
+            <div class="image-overlay">
+              <a href="https://juniorbma.github.io/TMaqM/"
+                ><p class="pris">Tejeduría a Máquina</p>
+                <p class="mof">
+                  Aprende a operar maquinaria avanzada para la producción
+                  textil. Domina las técnicas más modernas y conviértete en un
+                  especialista clave en la industria de la moda y la fabricación
+                  de tejidos.
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <button class="next" onclick="moveImages(1)">&#10095;</button>
+      </div>
+    </section>
+
+    <section id="nosotros">
+      <h2>Nosotros</h2>
+      <p>
+        El CETPRO Beata María Asunta, ofrece los programas técnicos de: tejido
+        en telar, plataformas y servicios, tecnologías de la información - TI,
+        fabricación de prendas de vestir y estilismo, las cuales tienen gran
+        demanda en el mercado laboral. Las clases se impartirán tres días a la
+        semana en las tardes. Según informó la hermana Marleny Echeverri
+        Escobar, las matrículas iniciarían en el mes de julio, después que
+        culmine la mudanza de las máquinas industriales, y equipos. El Cetpro
+        funciona actualmente en el distrito de Huanca (Caylloma) cuenta con 65
+        alumnos y tiene una antigüedad de 35 años, bajo la dirección de la
+        Congregación de Hermanas Dominicas de la Doctrina Cristiana. <br />
+        Jóvenes desde los 14 años y adultos podrán realizar estudios técnicos
+        gratuitos en el distrito de Yura, tras el convenio interinstitucional
+        entre la Municipalidad Distrital de Yura, la Ugel Arequipa Norte y el
+        Centro de Educación Técnico-Productiva (CETPRO) Beata María Asunta. La
+        alcaldesa, Mirtha Ruelas Casillas señaló que se está cumpliendo el sueño
+        de muchas personas de tener estudiar gratuitamente, “Antes que se lleven
+        el Cetpro a otro distrito, pedí que lo traigan Yura, para que las
+        mamitas y todos los yureños tengan la oportunidad de estudiar y
+        conseguir un empleo o poner su propio negocio”, recalcó. Para el
+        funcionamiento del Cetpro, la comuna distrital habilitará los ambientes
+        del ex Centro Cultural de Ciudad de Dios para que se conviertan en aulas
+        de clases y la Ugel Arequipa Norte se encargará de la contratación y
+        pago de los docentes.
+      </p>
+    </section>
+
+    <section id="contactenos">
+      <div class="title-container">
+        <h2>Contáctanos</h2>
+      </div>
+      <div
+        class="contact-container"
+        style="
+          background-color: #e4e4e4;
+          padding: 40px;
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        "
+      >
+        <div class="contact-content" style="display: flex">
+          <!-- Mapa de Google -->
+          <div class="map-container" style="flex: 1; padding-right: 20px">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2255.1223784915087!2d-71.61823458908007!3d-16.305713228548345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9142377b90554697%3A0x17145c7f69c70633!2sCETPRO%20Beata%20Mar%C3%ADa%20Asunta!5e0!3m2!1ses-419!2spe!4v1733915077756!5m2!1ses-419!2spe"
+              width="100%"
+              height="600"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+          </div>
+
+          <!-- Formulario de contacto -->
+          <div class="form-container" style="flex: 1">
+            <form action="contacto.php" method="POST">
+              <div style="display: flex">
+                <!-- Formulario Izquierda -->
+                <div style="flex: 1; margin-right: 10px">
+                  <label for="name">Nombres:</label><br />
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                  /><br /><br />
+
+                  <label for="tipo-documento">Tipo de documento:</label>
+                  <select id="tipo-documento" name="tipo-documento" required>
+                    <option value="" disabled selected>
+                      Tipo de Documento
+                    </option>
+                    <option value="dni">DNI</option>
+                    <option value="carnet">Carnet de Extranjería</option>
+                  </select>
+
+                  <label for="cell">Celular:</label><br />
+                  <input
+                    type="text"
+                    id="cell"
+                    name="cell"
+                    required
+                  /><br /><br />
+                </div>
+
+                <!-- Formulario Derecha -->
+                <div style="flex: 1; margin-left: 10px">
+                  <label for="lastName">Apellidos:</label><br />
+                  <input
+                    type="text"
+                    id="lastName"
+                    name="lastName"
+                    required
+                  /><br /><br />
+
+                  <label for="docNumber">Número de Documento:</label><br />
+                  <input
+                    type="text"
+                    id="docNumber"
+                    name="docNumber"
+                    required
+                  /><br /><br />
+
+                  <label for="email">Correo:</label><br />
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                  /><br /><br />
+                </div>
+              </div>
+
+              <!-- Apartado para mensaje -->
+              <label for="message">Mensaje:</label><br />
+              <textarea id="message" name="message" rows="4" required></textarea
+              ><br /><br />
+
+              <input type="submit" value="Enviar" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="vision">
+      <h2>Visión</h2>
+      <p>
+        “Al 2026 somos una Institución Educativa que promueve una educación
+        integral en los valores Humanos y cristianos. Queremos ser una
+        institución Técnico productiva líder en sus nuevos programas de estudio,
+        que brinde una educación de calidad al alcance de todos. Contando con
+        personal capacitado y competente, garantizando la formación Técnica y el
+        empoderamiento de los estudiantes a través de la innovación, y el
+        desarrollo de habilidades y capacidades para responder a las necesidades
+        del mundo laboral”
+      </p>
+      <h2>Misión</h2>
+      <p>
+        “Somos un Centro de Educación Técnico Productiva en convenio, que
+        promueve los valores humanos y cristianos, la formación integral y
+        sólida de los estudiantes como seres críticos, emprendedores y
+        innovadores que responden positivamente a los retos y cambios de la
+        sociedad y se les facilita la inserción laboral, enmarcados en la
+        práctica de la trilogía y axiología institucional: “Verdad, Excelencia y
+        Trabajo”
+      </p>
+    </section>
+    <footer>
+      <div class="contenedor-footer">
+        <div class="seccion-footer">
+          <h4>Accesos Directos</h4>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="modulos.html">Modulos</a></li>
+            <li><a href="VisionMision.html">Visión y Misión</a></li>
+          </ul>
+        </div>
+        <div class="seccion-footer">
+          <h4>Redes Sociales</h4>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">LinkedIn</a></li>
+          </ul>
+        </div>
+        <div class="seccion-footer">
+          <h4>Contacto</h4>
+          <ul>
+            <li>
+              <img src="img-ops/LogoUbi.png" alt="" /><a href="#"
+                >Yura Km14 - 3er Paradero Ciudad de Dios</a
+              >
+            </li>
+            <li>
+              <img src="img-ops/Wha.png" alt="" /><a href="#"
+                >+51 957 323 011</a
+              >
+            </li>
+            <li>
+              <img src="img-ops/Wha.png" alt="" /><a href="#"
+                >+51 957 323 011</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-copy">
+        <p>&copy; Beata María Asunta</p>
+      </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
