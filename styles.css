@@ -701,6 +701,11 @@ footer ul li img{
 
 /* Para pantallas medianas */
 @media (max-width: 1024px) {
+    #nosotros p {
+    margin-left: 7vh;
+    margin-bottom: 45px;
+    margin-right: 7vh; 
+    }
     .contact-container {
         padding: 30px;
         max-width: 80%;
