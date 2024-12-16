@@ -672,6 +672,11 @@ footer ul li img{
 
 /* Para pantallas pequeñas */
 @media (max-width: 600px) {
+    #nosotros p{
+       margin-left: 7vh;
+       margin-bottom: 45px;
+       margin-right: 7vh; 
+    }
     .slider-container{
         margin-top: 200px;
     }
